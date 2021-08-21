@@ -4,8 +4,8 @@ import { HomeStack, AboutStack } from "./MyStack";
 const Drawer = createDrawerNavigator();
 const MyDrawer = () => {
   return (
-    <Drawer.Navigator initialRouteName="Home">
-      <Drawer.Screen name="Home" component={HomeStack} />
+    <Drawer.Navigator initialRouteName="Application">
+      <Drawer.Screen name="Application" component={HomeStack} />
       <Drawer.Screen name="About" component={AboutStack} />
     </Drawer.Navigator>
   );

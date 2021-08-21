@@ -15,7 +15,7 @@ const Task = ({ navigation, route }) => {
       <Text>{route?.params?.task}</Text>
       <Button title="go to home POP" onPress={popHandler} />
       <Text>Task</Text>
-      <Button title="go to home PUSH" onPress={pushHandler} />
+      { /*<Button title="go to home PUSH" onPress={pushHandler} /> */ }
     </View>
   );
 };

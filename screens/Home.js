@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, Text, FlatList, Button } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { globalStyles } from "../styles/global";
-const Home = ({ navigation }) => {
+const HomeScreen = ({ navigation }) => {
   const [tasks, setTasks] = useState([
     { task: "HTML I", done: true, id: "1" },
     { task: "CSS", done: true, id: "2" },
@@ -22,9 +22,9 @@ const Home = ({ navigation }) => {
           </TouchableOpacity>
         )}
       />
-      <Button title="go to Task" onPress={pressHandler} />
+      { /*<Button title="go to Task" onPress={pressHandler} /> */ }
     </View>
   );
 };
 
-export default Home;
+export default HomeScreen;

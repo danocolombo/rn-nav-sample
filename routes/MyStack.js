@@ -1,14 +1,14 @@
 import { createStackNavigator } from "@react-navigation/stack";
-import Home from "../screens/Home";
+import HomeScreen from "../screens/Home";
 import Task from "../screens/Task";
-import About from "../screens/About";
+import AboutScreen from "../screens/About";
 import React from "react";
 const Stack = createStackNavigator();
 
 const AboutStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="About" component={About} />
+      <Stack.Screen name="System Information" component={AboutScreen}/>
     </Stack.Navigator>
   );
 };
@@ -28,7 +28,7 @@ const HomeStack = () => {
     >
       <Stack.Screen
         name="Home"
-        component={Home}
+        component={HomeScreen}
         options={{
           headerStyle: {
             backgroundColor: "blue",
